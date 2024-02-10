@@ -1,3 +1,9 @@
+<!--
+  Name: Shane Walker
+  Files: index.html
+  Date: 10 February 2024
+  Description: This file is using HTML to format a design for a website about Mozilla this file has functioning images that change sized when zoom in and zoomed out and working links to various sites 
+-->
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -99,8 +105,8 @@
   <body>
     <header>
       <h1>Mozilla</h1>
-      <img src="firefox_logo-only_RGB-120.png" alt="Firefox logo">
-      <!-- insert <img> element, link to the small
+      <img src="firefox_logo-only_RGB-120.png" alt="Firefox logo"> <!--Implemented the 120px version of the Firefox logo including an appropriate alt attribute-->
+      <!-- inserted a <img> element and the link to the small
           version of the Firefox logo -->
 
     </header>
@@ -108,7 +114,7 @@
     <main>
       <article>
         <iframe width="400" height="225" src="https://www.youtube.com/embed/ojcNcvb1olg" style="border:0;" allowfullscreen></iframe>
-        <!-- insert iframe from youtube -->
+        <!-- inserted the iframe from youtube -->
 
         <h2>Rocking the free web</h2>
 
@@ -118,31 +124,32 @@
       </article>
 
       <div class="further-info">
-        <!-- insert images with srcsets and sizes -->
+        <!-- Created and add the 400px and 120px version of the Firefox logo, the Addons image, and the Dinosaur logo. -->
         <a href="https://www.mozilla.org/en-US/firefox/new/">
           <img srcset="firefox_logo-only_RGB-120.png 120w, firefox_logo-only_RGB-400.png 400w"
           sizes="(max-width:500px) 120px, 400px" 
-          src="firefox_logo-only_RGB-400.png" alt="Download Firefox">
+          src="firefox_logo-only_RGB-400.png" alt="Download Firefox"> <!-- Added the Firefox logo image inside the link "Download Firefox" including alt,  srcset and  sizes attributes-->
         </a>
         <a href="https://www.mozilla.org/">
           <img srcset="mozilla-dinosaur-head-120.png 120w, mozilla-dinosaur-head-400.png 400w"
           sizes="(max-width:500px) 120px, 400px"
-          src="mozilla-dinosaur-head-400.png" alt="Dinosaur Head">
+          src="mozilla-dinosaur-head-400.png" alt="Dinosaur Head"> <!-- Added the Dinosaur logo image inside the link "mozilla.org" including alt,  srcset and  sizes attributes-->
         </a>
         <a href="https://addons.mozilla.org/">
           <img srcset="firefox-addons-120.jpg 120w, firefox-addons-400.jpg 400w"
           sizes="(max-width: 500px) 120px, 400px"
-          src="firefox-addons-400.jpg" alt="firefox addons">
+          src="firefox-addons-400.jpg" alt="firefox addons"> <!-- Added the Add-ons logo image inside the link for the add-ons site including alt,  srcset and  sizes attributes-->
         </a>
         <a href="https://developer.mozilla.org/en-US/">
           <img src="mdn.svg" alt="mdn">
         </a>
-        <div class="clearfix"></div>
+        <div class="clearfix"></div> <!-- Added the SVG image inside <a href="https://developer.mozilla.org/en-US/"></a> link including src and alt  attributes-->
       </div>
       <div class="red-panda">
-        <picture>
+        <picture> <!--Created a 1200px and 600px version of the Red Panda image if the section is landscape
+          Created a 1200px wide landscape version of red-panda.jpg and a wide portrait version of red-panda.jpg that is zoomed-in/close-up on just the panda-->
             <source media="(max-width:600px)" srcset="red-panda-600.jpg">
-            <img src="red-panda-1200.jpg" alt="red panda">
+            <img src="red-panda-1200.jpg" alt="red panda"> <!--Implemented code to handle a portrait versus landscape red panda picture-->
         </picture>
       </div>
 

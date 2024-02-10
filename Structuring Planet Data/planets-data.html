@@ -1,3 +1,9 @@
+<!--
+  Name: Shane Walker
+  Files: planets-data.html
+  Date: 10 February 2024
+  Description: In this file we are creating a table chart displaying information about all of the planets in our solar system using html
+-->
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -5,22 +11,22 @@
     <meta name="viewport" content="width=device-width">
     <title>Table template</title>
     <link href="minimal-table.css" rel="stylesheet" type="text/css">
-  </head>
+  </head> <!--Added a <table> element that included <thead> and <tbody> elements-->
   <body>
     <h1>Planets data</h1>
 
     <table>
-        <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
+        <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption> <!--Included a <caption> element immediately below the <table> tag-->
         <colgroup>
             <col span="2">
-            <col style="border: 2px solid black">
+            <col style="border: 2px solid black"> <!--Added a black border around the planet names column using a <colgroup> and a in-line style attribute-->
             <col span="9">
         </colgroup>
         <thead>
-            <tr>
+            <tr> <!--Included a <tr> element with <th> elements (that include the correct titles from the raw data) inside of the <thead> element-->
                 <td colspan="2"></td>
                 <td>Name</td>
-                <td>Mass (10<sup>24</sup>kg)</td>
+                <td>Mass (10<sup>24</sup>kg)</td> <!-- nine (9) additional <tr> rows, each with a <th> for the planet's name and <td> elements for each data point from the raw data-->
                 <td>Diameter (km)</td>
                 <td>Density (kg/m<sup>3</sup>)</td>
                 <td>Gravity (m/s<sup>2</sup>)</td>
@@ -33,7 +39,7 @@
         </thead>
         <tbody>
             <tr>
-                <th colspan="2" rowspan="4" scope="rowgroup">Terrestrial planets</th>
+                <th colspan="2" rowspan="4" scope="rowgroup">Terrestrial planets</th> <!--Added the the scope="rowgroup"-->
                 <th scope="row">Mercury</th>
                 <td>0.330</td>
                 <td>4,879</td>
@@ -46,7 +52,7 @@
                 <td>Closest to the Sun</td>
             </tr>
             <tr>
-                <th scope="row">Venus</th>
+                <th scope="row">Venus</th> <!--Added the the scope="rowgroup"-->
                 <td>4.87</td>
                 <td>12,104</td> 
                 <td>5243</td>
@@ -58,7 +64,7 @@
                 <td></td>               
             </tr>
             <tr>
-                <th scope="row">Earth</th>
+                <th scope="row">Earth</th> <!--Added the the scope="rowgroup"-->
                 <td>5.97</td>
                 <td>12,756</td>
                 <td>5514</td>
@@ -70,7 +76,7 @@
                 <td>Our world</td>
             </tr>
             <tr>
-                <th scope="row">Mars</th>
+                <th scope="row">Mars</th> <!--Added the the scope="rowgroup"-->
                 <td>0.642</td>
                 <td>6,792</td>
                 <td>3933</td>
@@ -82,9 +88,9 @@
                 <td>The red planet</td>
             </tr>
             <tr>
-                <th rowspan="4">Jovian Planets</th>
-                <th rowspan="2">Gas Giants</th>
-                <th scope="row">Jupiter</th>
+                <th rowspan="4">Jovian Planets</th> 
+                <th rowspan="2">Gas Giants</th> <!--Added the special row with Jovian planets, ice giants and dwarf plants correclty using colspan and rowspan attributes correctly-->
+                <th scope="row">Jupiter</th> <!--Added the the scope="rowgroup"-->
                 <td>1898</td>
                 <td>142,984</td>
                 <td>1326</td>
@@ -96,7 +102,7 @@
                 <td>The largest planet</td>
             </tr>
             <tr>
-                <th scope="row">Saturn</th>
+                <th scope="row">Saturn</th> <!--Added the the scope="rowgroup"-->
                 <td>568</td>
                 <td>120,536</td>
                 <td>687</td>
@@ -109,7 +115,7 @@
             </tr>
             <tr>
                 <th rowspan="2">Ice Giants</th>
-                <th scope="row">Uranus</th>
+                <th scope="row">Uranus</th> <!--Added the the scope="rowgroup"-->
                 <td>86.8</td>
                 <td>51,118</td>
                 <td>1271</td>
@@ -121,7 +127,7 @@
                 <td></td>
             </tr>
             <tr>
-                <th scope="row">Neptune</th>
+                <th scope="row">Neptune</th> <!--Added the the scope="rowgroup"-->
                 <td>102</td>
                 <td>49,528</td>
                 <td>1638</td>
@@ -133,8 +139,8 @@
                 <td></td>
             </tr>
             <tr>
-                <th colspan="2"  scope="row">Dwarf Planets</th>
-                <th scope="row">Pluto</th>
+                <th colspan="2"  scope="row">Dwarf Planets</th> <!--Added the the scope="rowgroup"-->
+                <th scope="row">Pluto</th> <!--Added the the scope="rowgroup"-->
                 <td>0.0146</td>
                 <td>2,370</td>
                 <td>2095</td>
