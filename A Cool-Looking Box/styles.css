@@ -10,4 +10,7 @@ html {
     font-size: 1.1rem;
     text-align: center;
     color: #ffffff;
+
+    border: 1px solid #990000;
+    border-radius: 10px;
   }
