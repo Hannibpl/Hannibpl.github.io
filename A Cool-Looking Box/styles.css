@@ -3,22 +3,23 @@ html {
   }
   /* Your CSS below here */
   div {
-    width: 200px;
-    margin: auto;
+    width: 200px; /* Added an appropriate height and width for the overall box */
+    margin: auto; /* the box has been centred horizontally */
     line-height: 9;
 
-    font-size: 1.1rem;
+    font-size: 1.1rem; /* Added in  an rem as a unit for a font-size value */
     text-align: center;
     color: #ffffff;
-    text-shadow: 1px 1px 1px #000000;
+    text-shadow: 1px 1px 1px #000000; /* Added a contrasting color and black shadow for text on the page */
 
-    border: 1px solid #990000;
-    border-radius: 10px;
+    border: 1px solid #8e0101; /* Added a 1px solid border with a similar color as the box, but slightly darker */
+    border-radius: 10px; 
 
-    background-color: #990000;
+    background-color: #990000; /* Added reasonable background-color for the overall box*/
     background-image: linear-gradient( to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    /* Added a linear semi-transparent black gradient that goes towards the top left corner that is completely transparent */
 
-    box-shadow: inset 2px 2px 3px 
+    box-shadow: inset 2px 2px 3px /* "multiple box shadows" correctly */
     rgba(255, 255, 255, 0.6),
     inset -2px -2px 3px 
     rgba(0, 0, 0, 0.6), 2px 2px 5px #000000;;
