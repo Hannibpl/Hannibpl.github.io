@@ -6,4 +6,8 @@ html {
     width: 200px;
     margin: auto;
     list-style: 9;
+
+    font-size: 1.1rem;
+    text-align: center;
+    color: #ffffff;
   }
