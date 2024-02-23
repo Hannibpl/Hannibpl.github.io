@@ -10,7 +10,11 @@ html {
     font-size: 1.1rem;
     text-align: center;
     color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
 
     border: 1px solid #990000;
     border-radius: 10px;
+
+    background-color: #990000;
+    background-image: linear-gradient();
   }
