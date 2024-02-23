@@ -5,7 +5,7 @@ html {
   div {
     width: 200px;
     margin: auto;
-    list-style: 9;
+    line-height: 9;
 
     font-size: 1.1rem;
     text-align: center;
@@ -16,5 +16,5 @@ html {
     border-radius: 10px;
 
     background-color: #990000;
-    background-image: linear-gradient();
+    background-image: linear-gradient( to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
   }
