@@ -61,4 +61,23 @@
   
   /* WRITE YOUR CODE BELOW HERE */
 
-  
+  html {
+    font-family: nobileitalic, fira_sansextrabold;
+    font-size: 10px;
+  }
+
+  h1, h2{
+    font-family: 'fira_sansextrabold', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 1.7px;
+  }
+  h1,h2 + p{
+    text-indent: 20px;
+  }
+  h1{
+    font-size: 4rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 3rem;
+  }
