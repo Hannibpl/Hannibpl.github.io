@@ -21,6 +21,9 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
+    display: grid;
+    gap: 19px;
+    grid-template-columns: 3fr 1fr;
   }
   
   nav {
