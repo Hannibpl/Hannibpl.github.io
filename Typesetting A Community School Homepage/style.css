@@ -62,7 +62,7 @@
   /* WRITE YOUR CODE BELOW HERE */
 
   html {
-    font-family: nobileitalic, fira_sansextrabold;
+    font-family: 'nobileitalic', sans-serif;
     font-size: 10px;
   }
 
@@ -80,4 +80,21 @@
   }
   h2 {
     font-size: 3rem;
+  }
+
+  p, li {
+    font-size: 1.7rem;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+
+  a {
+    outline: none;
+  }
+
+  a[href*="http"] {
+    background: url(external-link-52.png) no-repeat 100% 0;
+    background-size: 14px 14px;
+    padding-right: 19px;
   }
