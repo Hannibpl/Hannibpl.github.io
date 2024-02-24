@@ -1,5 +1,5 @@
 /* General setup */
-@font-face {
+@font-face {   /* Added (2) downloaded fonts and generated bulletproof @font-face  */
     font-family: 'nobileitalic';
     src: url('nobile-italic-webfont.woff2') format('woff2'),
          url('nobile-italic-webfont.woff') format('woff');
@@ -61,31 +61,31 @@
   
   /* WRITE YOUR CODE BELOW HERE */
 
-  html {
+  html {  /* added an body font on the <html> elements using CSS and one of the created font-face */
     font-family: 'nobileitalic', sans-serif;
-    font-size: 10px;
+    font-size: 10px; /* added an site-wide font-size to the html element in the CSS */
   }
 
-  h1, h2{
+  h1, h2{ /* Added heading font to <h1> and <h2> elements using CSS and the other of the created font-face */
     font-family: 'fira_sansextrabold', sans-serif;
     font-weight: bolder;
-    letter-spacing: 1.7px;
+    letter-spacing: 1.7px; /* added a letter-sizing property for the headers */
   }
   h1,h2 + p{
-    text-indent: 20px;
+    text-indent: 20px; /* added the styling for indenting the first paragraph after each heading */
   }
   h1{
-    font-size: 4rem;
-    text-align: center;
+    font-size: 4rem; /* modifies all the font-size selectors using rem */
+    text-align: center; /* added the text-align: center; on the h1 */
   }
   h2 {
     font-size: 3rem;
   }
 
-  p, li {
+  p, li { /* added a line-height adjustment for body text for the p and li */
     font-size: 1.7rem;
     line-height: 1.7;
-    letter-spacing: 1px;
+    letter-spacing: 1px; /* added the letter-sizing property for body text */
     word-spacing: 1px;
   }
 
@@ -94,35 +94,35 @@
   }
 
   a[href*="http"] {
-    background: url(external-link-52.png) no-repeat 100% 0;
+    background: url(external-link-52.png) no-repeat 100% 0; /* added that external links have the external link icon displayed beside them */
     background-size: 14px 14px;
     padding-right: 19px;
   }
   
-  a:focus, a:hover {
-    text-decoration: none;
+  a:focus, a:hover { 
+    text-decoration: none; /* added styling that makes links underlined unless they are hovered over */
   }
 
-  a:link, a:visited {
-    color: #aa6666;
+  a:link, a:visited { 
+    color: #aa6666; /* added coloring for  link, visited, focus, and hover */
   }
 
   a:active {
-    color: transparent;
+    color: transparent; 
     text-shadow: 0px 0px 1px #f00, 0px 0px 2px #f00, 0px 0px 3px black, 0px 0px 4px black;
   }
   
   ul {
-    list-style-type: square;
+    list-style-type: square; /* added list-style-type property for both ul and ol selectors */
   }
   ol {
     list-style-type: lower-latin;
   }
    ul, ol {
-    margin: 1.5rem 0;
+    margin: 1.5rem 0;  
   }
   nav ul {
-    padding-left: 0;
+    padding-left: 0; /* a margin selector with an property using rem units */
     margin-top: 0.9rem;
   }
   
@@ -131,7 +131,7 @@
     margin-bottom: 1.9rem;
   }
 
-  nav li a {
+  nav li a { /* added the styling for the nav bar elements */
     display: inline-block;
     text-decoration: none;
     width: 100%;
@@ -141,7 +141,7 @@
     border: 1px solid #aa6666;
   }
   
-  nav li a:focus, nav li a:hover {
+  nav li a:focus, nav li a:hover { /* added the default focus outline from all links on the page */
     color: #ffffff;
     background: #aa6666;
   }
