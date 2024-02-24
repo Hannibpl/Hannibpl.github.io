@@ -106,3 +106,8 @@
   a:link, a:visited {
     color: #aa6666;
   }
+
+  a:active {
+    color: transparent;
+    text-shadow: 0px 0px 1px #f00, 0px 0px 2px #f00, 0px 0px 3px black, 0px 0px 4px black;
+  }
