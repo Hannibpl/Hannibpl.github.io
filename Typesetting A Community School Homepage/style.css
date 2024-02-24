@@ -111,3 +111,14 @@
     color: transparent;
     text-shadow: 0px 0px 1px #f00, 0px 0px 2px #f00, 0px 0px 3px black, 0px 0px 4px black;
   }
+  
+  ul {
+    list-style-type: square;
+  }
+  ol {
+    list-style-type: lower-latin;
+  }
+   ul, ol {
+    margin: 1.5rem 0;
+  }
+  
