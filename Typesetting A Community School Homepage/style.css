@@ -1,4 +1,21 @@
 /* General setup */
+@font-face {
+    font-family: 'nobileitalic';
+    src: url('nobile-italic-webfont.woff2') format('woff2'),
+         url('nobile-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fira_sansextrabold';
+    src: url('firasans-extrabold-webfont.woff2') format('woff2'),
+         url('firasans-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 * {
     box-sizing: border-box;
@@ -43,3 +60,5 @@
   }
   
   /* WRITE YOUR CODE BELOW HERE */
+
+  
