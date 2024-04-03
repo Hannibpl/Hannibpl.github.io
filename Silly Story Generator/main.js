@@ -4,7 +4,7 @@ const randomize = document.querySelector('.randomize');
 const story = document.querySelector('.story');
 
 function randomValueFromArray(array){
-  const random = Math.floor(Math.random()*array.length);
+  const random = Math.floor(Math.random() * array.length);
   return array[random];
 } 
 /* created the storyText variable and insertX, insertY, and insertZ variable */
@@ -22,9 +22,9 @@ function result() {
     const yItem = randomValueFromArray(inserty); 
     const zItem = randomValueFromArray(insertz);
 
-    newStory = newStory.replaceAll(':insertx:',xItem); /* Added newStory.replaceAll() function call to replace :insertx:, :inserty: and :insertz: */
-    newStory = newStory.replaceAll(':inserty:',yItem);
-    newStory = newStory.replaceAll(':insertz:',zItem);
+    newStory = newStory.replaceAll(':insertx:', xItem); /* Added newStory.replaceAll() function call to replace :insertx:, :inserty: and :insertz: */
+    newStory = newStory.replaceAll(':inserty:', yItem);
+    newStory = newStory.replaceAll(':insertz:', zItem);
 
   if(customName.value !== '') {
     const name = customName.value;
@@ -33,9 +33,9 @@ function result() {
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = `${Math.round(300*0.0714286)} stone`; /* converts the 300lb to its equivalent in "stones" */
-    const temperature =  `${Math.round((94-32) * 5 / 9)} centigrade`; /* converts the 94 degrees fahrenhiet to its equivalent in centigrade */
-    newStory = newStory.replaceAll('94 fahrenheit',temperature)
+    const weight = `${Math.round(300 * 0.0714286)} stone`; /* converts the 300lb to its equivalent in "stones" */
+    const temperature =  `${Math.round((94 - 32) * 5 / 9)} centigrade`; /* converts the 94 degrees fahrenhiet to its equivalent in centigrade */
+    newStory = newStory.replaceAll('94 fahrenheit', temperature)
     newStory = newStory.replaceAll('300 pounds', weight);
     }
 
