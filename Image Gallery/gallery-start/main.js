@@ -6,8 +6,22 @@ const overlay = document.querySelector('.overlay');
 
 /* Declaring the array of image filenames */
 
+const images = [
+    'pic1.jpg', 
+    'pic2.jpg', 
+    'pic3.jpg', 
+    'pic4.jpg', 
+    'pic5.jpg'];
+
 /* Declaring the alternative text for each image file */
 
+const alts = {
+    'pic1.jpg' : 'Closeup of a blue human eye', 
+    'pic2.jpg' : 'Closeup of a wave of sand',
+    'pic3.jpg' : 'Purple and White Flowers',
+    'pic4.jpg' : 'Wall of An Egyptian Scripture',
+    'pic5.jpg' : 'Closeup of a moth on a leaf',
+}
 /* Looping through images */
 
 const newImage = document.createElement('img');
