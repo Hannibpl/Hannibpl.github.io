@@ -22,9 +22,9 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
-class Shape {
+class Shape { //created a new Shape class that is a parent of the Ball class
 
-  constructor(x, y, velX, velY) {
+  constructor(x, y, velX, velY) { // created constructor that accepts four arguments
     this.x = x;
     this.y = y;
     this.velX = velX;
@@ -36,8 +36,7 @@ class Shape {
 class Ball extends Shape {
 
   constructor(x, y, velX, velY, color, size) {
-    super(x, y, velX, velY);
-
+    super(x, y, velX, velY); // modified the existing Ball constructor replacing the first 4 argument sets to a super()
     this.color = color;
     this.size = size;
     this.exists = true;
@@ -88,7 +87,7 @@ class Ball extends Shape {
 
 }
 
-class EvilCircle extends Shape {
+class EvilCircle extends Shape { // Added a new EvilCircle class that is a child of the Shape class
 
   constructor(x, y) {
     super(x, y, 20, 20);
@@ -114,7 +113,7 @@ class EvilCircle extends Shape {
     });
   }
 
-  draw() {
+  draw() {  // input the EvilCircle class a method named draw()
     ctx.beginPath();
     ctx.strokeStyle = this.color;
     ctx.lineWidth = 3;
@@ -122,7 +121,7 @@ class EvilCircle extends Shape {
     ctx.stroke();
   }
 
-  checkBounds() {
+  checkBounds() { // input the EvilCircle class a method named checkBounds() 
     if ((this.x + this.size) >= width) {
       this.x -= this.size;
     }
@@ -140,7 +139,7 @@ class EvilCircle extends Shape {
     }
   }
 
-collisionDetect() {
+collisionDetect() { // input the EvilCircle class a method named collisionDetect()
   for (const ball of balls) {
     if (ball.exists) {
       const dx = this.x - ball.x;
@@ -178,7 +177,7 @@ while (balls.length < 25) {
 
 const evilBall = new EvilCircle(random(0, width), random(0, height));
 
-function loop() {
+function loop() { // created and displayed an EvilBall oject each time the loop() function is called
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
   ctx.fillRect(0, 0, width, height);
 
