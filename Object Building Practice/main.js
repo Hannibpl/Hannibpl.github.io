@@ -3,6 +3,7 @@
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
+//Added the four (4) provided constants for: canvas; ctx; width; and, height
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
@@ -18,7 +19,7 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
-class Ball {
+class Ball { // Created the Ball class with a constructor that takes 5 arguments: x, y, velX, velY, color, size that sets the Ball object's attributes to the passed values
     constructor(x ,y, velX, velY, color, size) {
         this.x = x;
         this.y = y;
@@ -28,14 +29,14 @@ class Ball {
         this.size = size;
     }
 
-    draw() {
+    draw() { // Added the provided draw() function
   ctx.beginPath();
   ctx.fillStyle = this.color;
   ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
   ctx.fill();
 }
 
-update() {
+update() { // Added the provided update() function
     if ((this.x + this.size) >= width) {
       this.velX = -(this.velX);
     }
@@ -56,7 +57,7 @@ update() {
     this.y += this.velY;
   }   
 
-  collisionDetect() {
+  collisionDetect() { // Added the provided collisionDetect() function that will allow collision detection
     for (const ball of balls) {
       if (this !== ball) {
         const dx = this.x - ball.x;
@@ -66,6 +67,7 @@ update() {
         if (distance < this.size + ball.size) {
           ball.color = this.color = randomRGB();
         }
+        }
       }
     }
   }
@@ -73,7 +75,7 @@ update() {
 
   const balls = [];
 
-while (balls.length < 25) {
+while (balls.length < 25) { // Added the while() loop that creates 25 random balls
   const size = random(10, 20);
   const ball = new Ball(
     // ball position always drawn at least one ball width
@@ -89,14 +91,14 @@ while (balls.length < 25) {
   balls.push(ball);
 }
 
-function loop() {
+function loop() { // Added the provided loop() function
     ctx.fillStyle = "rgb(0 0 0 / 25%)";
     ctx.fillRect(0, 0, width, height);
   
     for (const ball of balls) {
       ball.draw();
       ball.update();
-      ball.collisionDetect();
+      ball.collisionDetect(); // Added the collsionDetect() function call in the loop() function
     }
   
     requestAnimationFrame(loop);
@@ -104,5 +106,5 @@ function loop() {
   
   loop();
 
-}
+
 
