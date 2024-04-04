@@ -4,8 +4,7 @@ const thumbBar = document.querySelector('.thumb-bar');
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
-/* Declaring the array of image filenames */
-
+/* created an array of the image file names, including the const keyword */
 const images = [
     'pic1.jpg', 
     'pic2.jpg', 
@@ -22,19 +21,19 @@ const alts = {
     'pic4.jpg' : 'Wall of An Egyptian Scripture',
     'pic5.jpg' : 'Closeup of a moth on a leaf',
 }
-/* Looping through images */
+/* looping through the array of images starting at 1 */
 
 for(const image of images) {
 const newImage = document.createElement('img');
 newImage.setAttribute('src', `images/${image}`);
 newImage.setAttribute('alt', alts[image]);
 thumbBar.appendChild(newImage);
-newImage.addEventListener('click', e => {
+newImage.addEventListener('click', e => { /* added an event listener for the "click" event on all thumbnails */
     displayedImage.src = e.target.src;
     displayedImage.alt = e.target.alt; 
     });
 }
-/* Wiring up the Darken/Lighten button */
+/* included an handler that will lighten/darken the button depending current value of const btnClass = btn.getAttribute*/
 
 btn.addEventListener('click', () => {
     const bottonClass = btn.getAttribute('class');
