@@ -1,5 +1,6 @@
-// functionality for showing/hiding the comments section
+// JavaScript comments for better accessibility and maintenance
 
+// Functionality for showing/hiding the comments section
 const showHideBtn = document.querySelector('.show-hide');
 const commentWrapper = document.querySelector('.comment-wrapper');
 
@@ -15,9 +16,8 @@ showHideBtn.onclick = function() {
     commentWrapper.style.display = 'none';
   }
 };
-  
-// functionality for adding a new comment via the comments form
 
+// Functionality for adding a new comment via the comments form
 const form = document.querySelector('.comment-form');
 const nameField = document.querySelector('#name');
 const commentField = document.querySelector('#comment');
@@ -52,20 +52,15 @@ function submitComment() {
   namePara.innerHTML += nameValue;
   commentPara.innerHTML += commentValue;
 
-  console.log("attr: ", namePara.getAttribute("tabindex"));
-
   list.appendChild(listItem);
   listItem.appendChild(namePara);
   listItem.appendChild(commentPara);
-
-  console.log("namePara: ", namePara);
 
   nameField.value = '';
   commentField.value = '';
 }
 
 // Control transcript display
-console.log("here")
 const transcript = document.querySelector('.transcript');
 const transcriptBtn = document.querySelector('.transcript-container button');
 
@@ -82,7 +77,7 @@ function toggleTranscript() {
 };
 
 // Comments button
-// make "show comments" div button able to be activated with Enter/Return key
+// Make "show comments" div button able to be activated with Enter/Return key
 const commentBtn = document.querySelector(".show-hide")
 
 commentBtn.addEventListener("keydown", (e) => {
@@ -95,6 +90,6 @@ commentBtn.addEventListener("keydown", (e) => {
 const skipToContentLink = document.querySelector("#skip-to-content-link");
 
 skipToContentLink.addEventListener("focus", (e) => {
-  // console.log("her")
   skipToContentLink.classList.toggle("skip-to-content-link-visible");
-})
+});
+

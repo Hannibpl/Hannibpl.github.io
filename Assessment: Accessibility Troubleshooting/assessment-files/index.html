@@ -1,3 +1,9 @@
+<!--
+  Name: Shane Walker
+  Files: index.html, style.css, Images
+  Date: 12 April 2024
+  Description: Create a webpage About bears and fixing some internal errors
+-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,7 +20,7 @@
   </head>
 
   <body>
-    <h1>
+    <h1> <!-- semantic HTML in the CSS file, font[size="7"]/font[size="6"]/font[size="5"] need to be replaced with h1/h2/h3 -->
       Welcome to our wildlife website
     </h1>
 
@@ -30,8 +36,8 @@
         <li><a href="blog">Blog</a></li>
       </ul>
 
-      <form class="search">
-        <label for="site-search">Search the site:</label>
+      <form class="search"> <!--semantic HTML in that all <br/> tags are removed-->
+        <label for="site-search">Search the site:</label> <!--ensures the label text is wrapped inside <label> elements setting for attributes that contain the ID values of the input elements of the labels they are for-->
         <input type="search" id="site-search" name="q" placeholder="Search query"
         aria-label="Search through site content">
         <button>Go!</button>
@@ -41,23 +47,23 @@
     <main id="main-content">
       <article>
         <section>
-          <h2>The trouble with Bears</h2>
+          <h2>The trouble with Bears</h2> <!-- semantic HTML in that all <br/> tags are removed -->
           <p>By Evan Wild</p>
           <p>Tall, lumbering, angry, dangerous. The real live bears of this world are proud, independent creatures, self-serving and always on the hunt for food. Nothing like the bears you see on TV, like Baloo from renowned documentary, The Jungle Book.</p>        
           <p>So what are bears really like, and why does the world's media portray them with such a skewed vision? In this article we try to answer those questions, and give you a real insight into the life of the bear.</p>
         </section>
 
         <section>
-          <h3>Types of bear</h3>
+          <h3>Types of bear</h3> <!-- semantic HTML in that all paragraphs are wrapped in <p> tags -->
           <p>Bears come in two varieties — large and medium. You don't get small bears. If you have seen a small bear, then it was in fact probably a baby bear (cub) from another species.</p>
           <p>Bears can also be classified in terms of their habitat — both large and medium bears are just as at home in urban areas as they are in the countryside. Different habitats encourange different behaviour however, as you'll find out below. The below table also gives you some useful facts about bears.</p>
         </section>
 
         <table>
-          <caption>Types of Bears and their attributes</caption>
+          <caption>Types of Bears and their attributes</caption> 
           <thead>
             <tr>
-              <th scope="col">Bear Type</th>
+              <th scope="col">Bear Type</th> <!--makes the table of data more screenreader friendly by including a summary attribute and/or a <caption> element, changin the first row to <th> elements and adding scope="col" to the heading -->
               <th scope="col">Coat</th>
               <th scope="col">Adult size</th>
               <th scope="col">Habitat</th>
@@ -67,7 +73,7 @@
           </thead>
           <tbody>
             <tr>
-              <th scope="row">Wild</th>
+              <th scope="row">Wild</th> <!--in the first row and scope="row" to the headings in the first column-->
               <td>Brown or black</td>
               <td>1.4 to 2.8 meters</td>
               <td>Woods and forests</td>
@@ -116,14 +122,14 @@
           <audio controls>
             <source src="media/bear.mp3" type="audio/mp3">
             <source src="media/bear.ogg" type="audio/ogg">
-            <p>It looks like your browser doesn't support HTML5 audio players. <a href="media/bear.mp3">link to the video</a>> instead</p>
+            <p>It looks like your browser doesn't support HTML5 audio players. <a href="media/bear.mp3">link to the video</a>> instead</p> <!--includes a link in the alt attribute for the audio file for older browser support-->
           </audio>
           <div class="transcript-container">
             <div class="transcript-control">
-              <button>Show transcript</button>
+              <button>Show transcript</button> <!--makes the show/hide comment control button keyboard accessible-->
             </div>
             <section class="transcript">
-              <p><strong>Narrator</strong>: This isn't really an audio fact file about bears. But it is, an audio file that you can transcribe.</p>
+              <p><strong>Narrator</strong>: This isn't really an audio fact file about bears. But it is, an audio file that you can transcribe.</p> <!--includes a transcript of the audio file for hearing impaired users-->
             </section>
           </div>  
         </div>
